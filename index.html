@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Be My Valentine?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 120px;
+      background-color: #ffe6f0;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 12px 24px;
+      margin: 12px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .yes-btn {
+      background-color: #ff4da6;
+      color: white;
+    }
+
+    .yes-btn:hover {
+      background-color: #ff1a8c;
+    }
+
+    .no-btn {
+      background-color: #cccccc;
+    }
+
+    #msg {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>💘 Sani, will you be my Valentine? 💘</h1>
+
+  <button class="yes-btn" onclick="yes()">Yes 💖</button>
+  <button class="no-btn" onclick="no()">No 😌</button>
+
+  <div id="msg"></div>
+
+  <script>
+    function yes() {
+      document.getElementById("msg").innerHTML =
+        "YAYYY 💖 Date confirmed 😄 I love you!";
+    }
+
+    function no() {
+      document.getElementById("msg").innerHTML =
+        "Nice try 😌 The only correct answer is YES 💘";
+    }
+  </script>
+
+</body>
+</html>
