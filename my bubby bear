@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Be My Valentine?</title>
+  <style>
+    body { font-family: Arial; text-align:center; padding-top:100px; }
+    button { font-size: 22px; padding: 14px 22px; margin: 12px; cursor:pointer; }
+    #msg { margin-top: 30px; font-size: 26px; }
+  </style>
+</head>
+<body>
+  <h1>💘 Sani, will you be my Valentine? 💘</h1>
+  <button onclick="yes()">Yes</button>
+  <button onclick="no()">No</button>
+  <div id="msg"></div>
+
+  <script>
+    function yes() {
+      document.getElementById("msg").innerHTML = "YAYYY 💖 Date confirmed 😄";
+    }
+    function no() {
+      document.getElementById("msg").innerHTML = "Nice try 😌 The only option is YES 💘";
+    }
+  </script>
+</body>
+</html>
